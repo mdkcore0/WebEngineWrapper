@@ -5,10 +5,12 @@ Simple Qt WebEngine wrapper for use on PyQt5/QML
 
 As PyQt5 doesn't have bindings for [QtWebEngine]
 (http://qt-project.org/wiki/QtWebEngine) yet (last tested on PyQt version
-*5.4-snapshot-837edec02d98*), and we need to initialize its OpenGL resource 
+*5.4-snapshot-837edec02d98*), and we need to initialize its OpenGL resource
 sharing on the main() function, I've done this simple wrapper to ease this task.
 
-This is intended to be used with PyQt5 and QML (see the example folder).
+You'll only need it on this condition: Developing a PyQt5 application **AND**
+want to use WebEngineView on QML (at least until QtWebEngine get exposed to
+python by PyQt).
 
 
 Requirements
